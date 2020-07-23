@@ -12,4 +12,4 @@ const db = connection.connect((err) => {
   console.log("Connected!");
 });
 
-module.exports = { db };
+module.exports = { connection };
