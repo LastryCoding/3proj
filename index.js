@@ -17,7 +17,7 @@ connection.connect((err) => {
   console.log("Connected!");
 });
 
-con.query("SELECT * FROM SystemEvents", (err, rows) => {
+connection.query("SELECT * FROM SystemEvents", (err, rows) => {
   if (err) throw err;
 
   console.log("Data received from Db:");
