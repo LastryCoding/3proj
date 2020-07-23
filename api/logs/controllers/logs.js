@@ -2,9 +2,8 @@ const { handleReadAllLogs, handleReadOneLogs } = require("../handlers/logs");
 
 // GET ALL
 exports.readAll = async (req, res) => {
-  const Result = await handleReadAllLogs();
-  console.log(Result);
-  res.status("200").json("ok");
+  const { status, message } = await handleReadAllLogs();
+  res.status(status).json(message);
 };
 
 // GET One
