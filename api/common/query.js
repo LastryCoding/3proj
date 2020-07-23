@@ -16,5 +16,6 @@ exports.query = async (Query) => {
       };
     }
   });
+  console.log(response);
   return response;
 };
