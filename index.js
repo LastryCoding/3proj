@@ -7,9 +7,9 @@ app.get("/", function (req, res) {
 
 const connection = mysql.createConnection({
   host: "localhost",
-  user: "user",
-  password: "password",
-  database: "database name",
+  user: "rsyslog",
+  password: "Supinfo1!",
+  database: "Syslog",
 });
 
 connection.connect((err) => {
