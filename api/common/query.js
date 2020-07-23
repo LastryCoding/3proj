@@ -1,7 +1,7 @@
-const { db } = require("../../utils/dbConnection");
+const { connection } = require("../../utils/dbConnection");
 
 exports.query = async (Query) => {
-  db.query(Query, (err, rows) => {
+  connection.query(Query, (err, rows) => {
     if (err) {
       console.error(err);
       return {
