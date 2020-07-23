@@ -5,17 +5,16 @@ exports.query = async (Query) => {
   await connection.query(Query, (err, rows) => {
     if (err) {
       console.error(err);
-      response = {
+      return (response = {
         status: 500,
         message: err,
-      };
+      });
     } else {
-      response = {
+      return (esponse = {
         status: 200,
         message: rows,
-      };
+      });
     }
   });
-  console.log(response);
   return response;
 };
